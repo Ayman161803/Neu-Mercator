@@ -1,0 +1,78 @@
+.image{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 0.5vw;
+    border: 2px solid;
+}
+
+.heads{
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 5vw;
+}
+
+.containerFirst, .containerSecond {
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.imageContainer{
+    background-color: #fff;
+    text-align: center;
+    display: block;
+    width: 23vw;
+    margin: 2vw;
+    padding: 1vw;
+    border-radius: 10px;
+    border: 2px solid;
+}
+
+.imageContainer:hover{
+    box-shadow: 0 2px 0 rgba(167, 63, 63, 0.938);
+
+}
+
+@media screen and (max-width: 1020px) {
+    .imageContainer{
+        width: 80vw;
+    }
+
+    .heads{
+        font-size: 5vw;
+    }
+}
+
+
+.add_button, .buy_button {
+    background-color: rgb(241, 67, 67);
+    border: 0;
+    padding: 1vw 2vw;
+    font-size: large;
+    transition: 0.3s;
+    border-radius: 0.4vw;
+}
+
+.checkoutButton:hover{
+    transform: scale(1.05);
+}
+
+.checkoutButton:active{
+    transform: scale(0.95);
+}
+
+.checkoutButton {
+    background-color: rgb(185, 10, 10);
+    border: 0;
+    padding: 1vw 2vw;
+    font-size: large;
+    transition: 0.4s;
+    border-radius: 0.4vw;
+}
+
+.checkoutButtonContainer{
+    display: flex;
+    justify-content: center
+}

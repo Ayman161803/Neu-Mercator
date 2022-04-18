@@ -1,0 +1,82 @@
+.container {
+    z-index: 10;
+
+    padding: 5vw 0;
+}
+
+.header {
+    text-align: center;
+    font-size: 10vw;
+    margin: 1vw;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30vw;
+    align-items: center;
+    margin-top: 50vw;
+}
+
+.buttonOnHomePage{
+    display: flex;
+}
+
+.options a {
+    height: 20vw;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 5vw;
+    color: rgb(0, 0, 0);
+    gap: 2vw;
+    text-align: center;
+    margin-left: 4vw;
+}
+
+/* .options div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+} */
+
+.options svg {
+    width: 50%;
+    height: 50%;
+    color: #aaa;
+}
+
+.options a:hover {
+    color: #fff;
+}
+
+@media screen and (min-width: 700px) {
+    .container {
+        height: 100vh;
+    }
+
+    .header {
+        font-size: 3vw;
+    }
+
+    .options {
+        flex-direction: row;
+        margin-top: 5vw;
+        gap: 10vw;
+    }
+
+    .options svg {
+        width: 10%;
+    }
+
+    .options a {
+        font-size: 3vw;
+        gap: 3vw;
+        flex-direction: row;
+        gap: 1vw;
+    }
+}

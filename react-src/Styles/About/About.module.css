@@ -1,0 +1,35 @@
+.box {
+    padding: 10vw;
+    font-size: 7vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10vw;
+}
+
+.box p {
+    text-align: center;
+}
+
+.heading {
+    font-size: 10vw;
+}
+
+@media screen and (min-width: 700px) {
+    .box {
+        font-size: 5vw;
+    }
+
+    .heading {
+        font-size: 7vw;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .box {
+        font-size: 3vw;
+    }
+
+    .heading {
+        font-size: 5vw;
+    }
+}

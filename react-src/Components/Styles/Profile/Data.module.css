@@ -1,0 +1,9 @@
+.dataPair{
+    text-align: center;
+    padding: 1vw;
+    font-family:serif;
+}
+
+.dataPair:hover{
+    color: red;
+}

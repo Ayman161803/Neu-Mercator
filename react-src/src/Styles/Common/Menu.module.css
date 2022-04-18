@@ -1,0 +1,88 @@
+.box {
+    position: relative;
+    width: 100%;
+    background-color: #000;
+    color: #000;
+    box-shadow: 0 4px 10px #000;
+    top: 0;
+    font-size: 5vw;
+    padding: 5vw;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5vw;
+}
+
+.list a {
+    text-decoration: none;
+    color: #333;
+    font-size: large;
+}
+
+.list li{
+    font-size: large;
+    color: #fff;
+}
+
+.list a:hover, .likeLink:hover{
+    color: #fff;
+}
+
+.visible {
+    transform: translate3d(0, 0, 0);
+    transition: all 0.8s ease-out;
+}
+
+.invisible {
+    margin-bottom: -50vw;
+    transform: translate3d(-110vw, 0, 0);
+    transition: all 1s ease-out;
+}
+
+.likeLink {
+  border: none;
+  background: transparent;
+  font-size: 1.25vw;
+  color: #aaa;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 700px) {
+    .box {
+        position: fixed;
+        height: 100%;
+        width: 25vw;
+        background-color: rgba(0, 0, 0, 0.5);
+        box-shadow: none;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        font-size: 3vw;
+        z-index: 2000;
+        color: #fff;
+    }
+
+    .visible {
+        transform: translate3d(0, 0, 0);
+        transition: transform 1s ease-out;
+    }
+
+    .invisible {
+        transform: translate3d(-50vw, 0, 0);
+        transition: transform 1s ease-in;
+    }
+
+    .list a {
+        color: #aaa;
+    }
+
+    .list {
+        gap: 2vw;
+    }
+}
